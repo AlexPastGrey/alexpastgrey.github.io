@@ -1,69 +1,94 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
     <title>
-        Assignment 1 WebDev
+        Assignment 2 Webdev
     </title>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Prac05b </title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Starter HTML JS CSS</title>
+        <link rel="stylesheet" href="Styles/style.css">
+        <script src="main.js" defer></script>
     </head>
     <body>
         <header>
             <h1>
                 <div>
-                    Welcome to my Portfolio!
+                    Musical Theatre!
                 </div>
             </h1>
-            <div class="flexcontainer">
-                <div class="linkclass" id="homepagelink">
-                    <p>
-                        <a href="index.html" class="button">
-                            The Homepage
-                        </a>
-                    </p>
-                </div>
-                <div class="linkclass" id="aboutmelink">
-                    <p>
-                        <a href="aboutme.html" class="button">
-                            About Me
-                        </a>
-                    </p>
-                </div>
-                <div class="linkclass" id="educationlink">
-                    <p>
-                        <a href="education.html" class="button">
-                            My Education
-                        </a>
-                    </p>
-                </div>
-                <div class="linkclass" id="hobbieslink">
-                    <p>
-                        <a href="hobbies.html" class="button">
-                            My Hobbies
-                        </a>
-                    </p>
-                </div>
-            </div>
         </header>
 
-        <!-- Page Specific Code -->
+        <nav class="container"> <!--menu system-->
+         
+            <div id="listdiv">
+                <li>
+                    <button class="button" id="page1btn">
+                        The origins of contemporary Musical Theatre
+                    </button>
+                </li>
+                
+                <li>
+                    <button class="button" id="page2btn">
+                        What defines "Musical Theatre" as a genre?
+                    </button>
+                </li>
+            
+                <li>
+                    <button class="button" id="page3btn">
+                        How do you tell story through music?
+                    </button>
+                </li>
+            </div>
 
-        <div class="pagecontent">
-            <div class="textbox" id="quickintro">
+        </nav>
+
+        <main class="pagecontent" id="educontent">
+            <div class="contentcard" id="page1">
                 <h1>
-                    A Quick Introduction!
+                    The origins of contemporary Musical Theatre
                 </h1>
                 <p>
-                    Welcome to my portfolio! My name is Ansel, and I have made this website for my Assignment 1 in Web Development. I have worked on this website for a while, and have tried to be at least a bit detailed, though this is more of a showcase of what I have learned in this class.
+                Double placeholder! Wow! Wololo!
                 </p>
-                
-                <img src="../images/picofme.png" alt="pictureofme" title="Picture of me" class="picofme">
-                
             </div>
-        </div>
 
-        <footer></footer>
+            <div class="contentcard" id="page2">
+                <h1>
+                    What defines "Musical Theatre" as a genre?
+                </h1>
+                <p>
+                    Overall, musical theatre is not exactly a genre, so my title is a little bit clickbait - Musical theatre songs are generally distinct because they prioritise storytelling and serving narrative purpose. Usually, a musical theatre song (or showtune) is developed to enhance moments in the musical&#8217s story. Musicals can exist wherein the songs were pre-existent, though they are known as Jukebox Musicals due to their lack of original music pieces.
+                    <button class="button" id="musicplayer">
+                        Play music
+                    </button>
+                    <br>
+                </p>
+                <div id="quiz"></div>
+                <br>
+                <div class="quizbuttoncontainer">
+                    <button class="quizbuttons" id="submit">
+                        Submit
+                    </button>
+                    <button class="quizbuttons" id="reload">
+                        Reload
+                    </button>
+                    <br>
+                </div>
+
+            </div>
+
+            <div class="contentcard" id="page3">
+                <h1>
+                    How do you tell story through music?
+                </h1>
+                <p>
+                    
+                    <div id='matchgrid'></div>
+                </p>
+            </div>
+        </main>
+    
+    
     </body>
 </html>
